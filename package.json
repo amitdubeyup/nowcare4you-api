@@ -1,12 +1,16 @@
 {
     "name": "channel-partner",
-    "version": "1.0.0",
     "description": "A awesome app for managing leads!",
     "main": "server.js",
     "start": "node server.js",
     "scripts": {
         "start": "node server.js",
         "test": "App is working fine!"
+    },
+    "version": "1.0.0",
+    "engines": {
+        "node": "10.8.0",
+        "npm": "6.x"
     },
     "author": "Amit Dubey",
     "license": "MIT",
