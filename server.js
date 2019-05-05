@@ -40,5 +40,13 @@ app.use(bodyParser.json());
 
 app.use('/api', routes);
 
+app.get('/*', (req, res) => {
+    res.status(200);
+    res.json({
+        success: true,
+        message: 'Welcome to the coolest API on the earth!'
+    });
+});
+
 app.listen(port);
 console.log('Local server is running on http://localhost:' + port);
