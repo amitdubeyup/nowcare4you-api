@@ -1,22 +1,75 @@
-#Update Collection Fields
+# nowcare4you-api
 
-#1. db.PinCode.updateMany( {}, { $rename: { "officename": "office_name", "pincode": "pin_code", "officeType": "office_type", "Deliverystatus": "delivery_status", "divisionname": "division_name", "regionname": "region_name", "circlename": "circle_name", "Taluk": "taluk", "Districtname": "district_name","statename": "state_name", "Telephone": "telephone","relatedSuboffice": "related_sub_office","relatedHeadoffice": "related_head_office"} } )
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
-#2.db.Partner.updateMany( {}, { $rename: { "manager": "hb_relation"} } )
+A awesome app for managing leads!
 
-#3.sudo npm rebuild node-sass --force --unsafe-perm=true
+## 🚀 Tech Stack
 
-#4. Start Local Database: sudo mongod --dbpath /Users/hostbooks/Desktop/database/data/db
+- Express.js
+- MongoDB
 
-#5. mongoimport -h ds133275.mlab.com:33275 -d channel-partner -c PinCode -u hostbooks -p hostbooks1234 --file PinCode.json
+## ✨ Features
 
-#6. mongoimport -h localhost:27017 -d channel-partner -c PinCode -u -p --file PinCode.json
+- Modern and scalable architecture
+- Database integration
+- RESTful API endpoints
 
-#7. mongoexport - h localhost: 27017 - d channel - partner - c Lead - o Lead.json
+## 📦 Installation
 
+```bash
+# Clone the repository
+git clone https://github.com/amitdubeyup/nowcare4you-api.git
+cd nowcare4you-api
 
+# Install dependencies
+npm install
+```
 
-Author 
+## ⚙️ Configuration
 
-Amit Dubey
+Create a `.env` file in the root directory:
 
+```bash
+cp .env.example .env
+```
+
+Update the `.env` file with your configuration values.
+
+## 🚀 Usage
+
+```bash
+# Production mode
+npm start
+
+# Run tests
+npm test
+```
+
+## 📜 Available Scripts
+
+- `npm run start` - node server.js
+- `npm run test` - App is working fine!
+
+## 📁 Project Structure
+
+```
+nowcare4you-api/
+├── package.json
+├── .env.example
+├── README.md
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Amit Dubey**
+
+- GitHub: [@amitdubeyup](https://github.com/amitdubeyup)
